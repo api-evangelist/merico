@@ -1,8 +1,27 @@
 aid: merico
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/merico.png
 name: Merico
-description: 'Merico is a company surfaced as a portfolio company of polychain and added to the API Evangelist
-  network as a stub for enrichment. Sector: dev-tools. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Merico is a developer-analytics company behind DevInsight, an engineering
+  intelligence platform that ingests data from DevOps tools like GitHub, GitLab,
+  Jira, and Jenkins to surface DORA metrics, resource allocation, sprint
+  planning insight, and customizable engineering dashboards. Merico is the
+  original creator and primary maintainer of Apache DevLake, the open-source
+  dev-data platform that powers DevInsight, exposing a self-hosted REST API and
+  an inbound webhook connector for pushing DevOps data from tools without a
+  dedicated plugin. The company operates a cloud SaaS at cloud.devinsight.ai and
+  maintains SOC 1 Type II and SOC 2 Type II attestations.
 url: https://raw.githubusercontent.com/api-evangelist/merico/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Dev Tools
+- Engineering Intelligence
+- DevOps
+- DORA Metrics
+- Software Analytics
+- Open Source
+- Data Platform
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/merico-domain-security.yml
 - type: Website
-  url: https://merico.dev
+  url: https://www.devinsight.ai
+- type: DeveloperPortal
+  url: https://devlake.apache.org
+- type: Documentation
+  url: https://devlake.apache.org/docs/Overview/Introduction/
+- type: APIReference
+  url: https://devlake.apache.org/docs/Overview/References
+- type: GettingStarted
+  url: https://devlake.apache.org/docs/GettingStarted
+- type: Blog
+  url: https://www.devinsight.ai/blog/home
+- type: Pricing
+  url: https://www.devinsight.ai/pricing
+- type: SignUp
+  url: https://cloud.devinsight.ai/
+- type: Login
+  url: https://cloud.devinsight.ai/?type=login
+- type: Support
+  url: https://www.devinsight.ai/demo
+- type: TermsOfService
+  url: https://www.devinsight.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.devinsight.ai/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/apache/devlake
+- type: TrustCenter
+  url: https://www.devinsight.ai/security-trust
+- type: Compliance
+  url: https://www.devinsight.ai/security-trust
+- type: Webhooks
+  url: https://devlake.apache.org/docs/Plugins/webhook/
+- type: Conformance
+  url: conformance/merico-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
