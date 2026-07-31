@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://devlake.apache.org/docs/Plugins/webhook/
+spec_type: Webhooks
+direction: inbound
+summary: >-
+  Apache DevLake (the open-source engine behind Merico DevInsight) exposes an
+  inbound webhook connector. When no dedicated plugin exists for a DevOps tool,
+  users register a webhook in DevLake and actively PUSH issue, deployment, and
+  incident data to DevLake's webhook endpoints. This is an ingest/receiver
+  webhook surface rather than an outbound event-notification stream.
+webhooks:
+- name: incident
+  description: Push incident open/close events into DevLake for DORA calculation.
+  method: POST
+  path: /api/plugins/webhook/{connectionId}/issues
+- name: deployment
+  description: Push deployment/CICD pipeline events into DevLake.
+  method: POST
+  path: /api/plugins/webhook/{connectionId}/deployments
+docs: https://devlake.apache.org/docs/Plugins/webhook/

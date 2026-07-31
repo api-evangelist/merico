@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.devinsight.ai/security-trust
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: "Merico maintains audited SOC 2 Type II attestation (security-trust page)."
+- id: soc1-type2
+  conforms: true
+  evidence: "Merico maintains audited SOC 1 Type II attestation (security-trust page)."
+- id: webhooks
+  conforms: true
+  evidence: "Apache DevLake documents an inbound webhook connector (docs/Plugins/webhook)."
+- id: oauth2
+  conforms: false
+  evidence: "No public OpenAPI declaring oauth2 security schemes was found."
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: "No published OpenAPI with application/problem+json error responses found."
