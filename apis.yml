@@ -50,7 +50,7 @@ tags:
 - DevOps
 - DORA Metrics
 - Software Analytics
-- Open-Source
+- Open Source
 - Data Platform
 tags_raw:
 - Company
@@ -61,6 +61,7 @@ tags_raw:
 - Software Analytics
 - Open Source
 - Data Platform
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
